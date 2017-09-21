@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseASMXServiceApplication", "DatabaseASMXServiceApplication\DatabaseASMXServiceApplication.csproj", "{184DDA0B-EF0B-4D8D-97F8-DD985BDC6F2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockClient", "StockClient\StockClient.csproj", "{2492365C-9EB5-4DFD-9BA1-22DF0CCD075C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{184DDA0B-EF0B-4D8D-97F8-DD985BDC6F2A} = {184DDA0B-EF0B-4D8D-97F8-DD985BDC6F2A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{184DDA0B-EF0B-4D8D-97F8-DD985BDC6F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184DDA0B-EF0B-4D8D-97F8-DD985BDC6F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184DDA0B-EF0B-4D8D-97F8-DD985BDC6F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184DDA0B-EF0B-4D8D-97F8-DD985BDC6F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2492365C-9EB5-4DFD-9BA1-22DF0CCD075C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2492365C-9EB5-4DFD-9BA1-22DF0CCD075C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2492365C-9EB5-4DFD-9BA1-22DF0CCD075C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2492365C-9EB5-4DFD-9BA1-22DF0CCD075C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11FD6E08-07F5-4176-9608-C1E441D639F7}
+	EndGlobalSection
+EndGlobal
