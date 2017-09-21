@@ -19,8 +19,9 @@ namespace DatabaseASMXServiceApplication
     {
 
         [WebMethod]
-        public string GetStock(string ThreeLetterISO)
+        public CurrencyDTO GetStock(string ThreeLetterISO)
         {
+            CurrencyDTO currency = null;
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString = "Server=ealdb1.eal.local;Database=EJL62_DB;User ID=ejl62_usr;Password=Baz1nga62";
             conn.Open();
@@ -30,7 +31,7 @@ namespace DatabaseASMXServiceApplication
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
                 while (reader.Read()) { 
-                returnStr = "Name: " + reader[0] + "\nISO:" + reader[1]  + "\nValue:" + reader[2];
+                CurrencyDTO + reader[0] + "\nISO:" + reader[1]  + "\nValue:" + reader[2];
                 }
             }
                 conn.Close();
